@@ -1,33 +1,45 @@
+:root {
+    --primary-color: darkblue;
+    --basic-border: 1px solid black;
+    --default-img-width: 200px;
+    --default-img-height: auto;
+}
+
 main {
     max-width: 840px;
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--primary-color);
     padding: 10px;
 }
+
 nav a {
     background-color: white;
     display: block;
     padding: 20px;
 }
+
 h1 {
-    color:darkblue;
+    color: var(--primary-color);
 }
+
 main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
+    width: var(--default-img-width);
+    height: var(--default-img-height);
+    border: var(--basic-border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+
 p {
     padding: 0;
 }
+
 footer {
     color: gray;
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--basic-border);
     text-align: center;
 }
 
@@ -42,6 +54,6 @@ aside {
 }
 
 aside img {
-    width: 200px;
-    height: auto;
+    width: var(--default-img-width);
+    height: var(--default-img-height);
 }
