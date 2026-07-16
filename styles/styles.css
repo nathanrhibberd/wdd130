@@ -1,8 +1,35 @@
 :root {
-    --primary-color: darkblue;
+    --primary-color: rgb(53, 53, 114);
     --basic-border: 1px solid black;
+    --barely-border: 1px solid rgb(0 0 0 / .2);
+    --box-element-color: #eee;
     --default-img-width: 200px;
     --default-img-height: auto;
+    --default-element-shadow: 0 0 10px gray;
+    --default-margin: 1rem;
+    --heading-font: Russo one, Russo one, sans-serif;
+    --body-font: Electrolize, Electrolize, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32px;
+    font-family: var(--heading-font);
+}
+
+h2 {
+    font-size: 24px;
+    font-family: var(--heading-font);
+}
+
+body {
+    font-size: 18px;
+    font-family: var(--body-font);
 }
 
 main {
@@ -10,6 +37,8 @@ main {
 }
 
 nav {
+    font-size: 20px;
+    font-family: var(--heading-font);
     background-color: var(--primary-color);
     padding: 10px;
 }
@@ -17,23 +46,27 @@ nav {
 nav a {
     background-color: white;
     display: block;
-    padding: 20px;
+    padding: 5px 5px 5px 10px;
 }
 
 h1 {
     color: var(--primary-color);
+    margin: var(--default-margin);
 }
 
-main img {
+img {
     width: var(--default-img-width);
     height: var(--default-img-height);
     border: var(--basic-border);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--default-element-shadow);
+    float: right;
+    margin: 0 1.5rem 1rem 1rem;
 }
 
 p {
     padding: 0;
+    margin: var(--default-margin);
 }
 
 footer {
@@ -41,19 +74,42 @@ footer {
     margin-top: 15px;
     border-top: var(--basic-border);
     text-align: center;
+    font-size: 12px;
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / .2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+    width: 25rem;
+    position: relative;
 }
 
 aside img {
     width: var(--default-img-width);
     height: var(--default-img-height);
+    border: var(--barely-border);
+    margin: 20px .5rem .5rem .5rem;
+}
+
+aside h2 {
+    position: absolute;
+    background-color: var(--box-element-color);
+    padding: 5px;
+    border: var(--barely-border);
+    box-shadow: var(--default-element-shadow);
+}
+
+aside p {
+    margin: 50px 0 0 0;
+}
+
+/* Class selectors */
+.box {
+    margin: 1rem;
+    border: var(--barely-border);
+    padding: 1rem;
+    background-color: var(--box-element-color);
+    color: #333;
+}
+
+.list {
+    padding: 1rem 1rem 1rem 2.5rem
 }
