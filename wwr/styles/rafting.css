@@ -100,7 +100,7 @@ h2 {
 
 footer {
     border-top: var(--bold-border);
-    text-align: left;
+    text-align: right;
     font-size: .75rem;
 }
 
