@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #0a283c;
+    --secondary-color: #7e3209;
+    --accent1-color: #004e71;
+    --accent2-color: #C15217;
+    --bold-border: 1px solid black;
+    --basic-border: 1px solid rgb(0 0 0 / .2);
+    --basic-shadow: -.25rem .25rem 10px rgb(0 0 0 / .5);
+    --heading-font: Coustard, Coustard, serif;
+    --body-font: Forum, Forum, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    border: var(--basic-border);
+    box-shadow: var(--basic-shadow);
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: var(--basic-shadow);
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+h2 {
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--accent2-color);
+    color: #fff;
+    border: var(--basic-border);
+    box-shadow: var(--basic-shadow);
+}
+
+.hero article img {
+    float: left;
+    margin: 5px;
+    width: 75px;
+    border: var(--basic-border);
+}
+
+footer {
+    border-top: var(--bold-border);
+    text-align: left;
+    font-size: .75rem;
+}
+
+footer p {
+    margin: .25rem 1rem .25rem 1rem;
+}
+
+.socialmedia img {
+    width: 50px;
+    align-items: left;
+}
