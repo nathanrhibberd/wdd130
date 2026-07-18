@@ -1,13 +1,12 @@
 :root {
     --primary-color: #0a283c;
-    --secondary-color: #7e3209;
     --accent1-color: #004e71;
     --accent2-color: #C15217;
     --bold-border: 1px solid black;
     --basic-border: 1px solid rgb(0 0 0 / .2);
     --basic-shadow: -.25rem .25rem 10px rgb(0 0 0 / .5);
-    --heading-font: Coustard, Coustard, serif;
-    --body-font: Forum, Forum, sans-serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -111,5 +110,4 @@ footer p {
 
 .socialmedia img {
     width: 50px;
-    align-items: left;
 }
