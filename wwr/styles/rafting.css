@@ -92,7 +92,7 @@ h2 {
 }
 
 .hero article img {
-    float: left;
+    float: right;
     margin: 5px;
     width: 75px;
     border: var(--basic-border);
