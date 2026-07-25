@@ -33,29 +33,50 @@ footer {
     margin: 0 auto;
 }
 
+header,
+footer {
+    padding: .25rem;
+    background-color: var(--accent2-color);
+    border: var(--basic-border);
+}
+
+.toppage {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 3fr;
+}
+
+.toppage ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.toppage a {
+    display: block;
+    padding: 1rem;
+    background-color: white;
+    border: var(--bold-border);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.navlogo {
+    display: flex;
+    width: 66.67%;
+    height: auto;
+}
+
 nav,
 p,
 section,
 article {
     margin: 16px;
     padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.hero {
-    position: relative;
-    border: var(--basic-border);
-    box-shadow: var(--basic-shadow);
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    box-shadow: var(--basic-shadow);
 }
 
 h1 {
@@ -78,11 +99,21 @@ h2 {
     color: #fff;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 95%;
+    height: auto;
+    margin: 2.5%;
+    box-shadow: var(--basic-shadow);
+}
+
 .hero article {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 50%;
+    bottom: 40px;
     padding: 16px;
     text-align: center;
     background-color: var(--accent2-color);
@@ -98,14 +129,56 @@ h2 {
     border: var(--basic-border);
 }
 
+.history {
+    display: grid;
+    grid-template-columns: 5fr 4fr 5fr;
+    grid-template-rows: auto 200px;
+    place-items: center;
+}
+
+.history h2 {
+    grid-column: span 3;
+}
+
+.history img {
+    display: block;
+    border: var(--basic-border);
+    width: 95%;
+    height: auto;
+    margin: 2.5%;
+    box-shadow: var(--basic-shadow);
+}
+
+.adventure img {
+    max-width: 125px;
+    display: block;
+    border: var(--basic-border);
+    height: auto;
+    box-shadow: var(--basic-shadow);
+}
+
+.adventure ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adventure figcaption {
+    text-align: center;
+}
+
 footer {
-    border-top: var(--bold-border);
-    text-align: right;
+    display: flex;
+    align-items: center;
     font-size: .75rem;
+    justify-content: space-between;
 }
 
 footer p {
     margin: .25rem 1rem .25rem 1rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .socialmedia img {
