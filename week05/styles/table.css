@@ -1,0 +1,17 @@
+table {
+    border: 2px solid rgb(127 127 127);
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid rgb(127 127 127);
+    padding: 2px;
+}
+
+thead th,
+tfoot tr {
+    background-color: rgb(31 31 31);
+    color: #fff;
+    font-weight: 700;
+}

@@ -1,0 +1,120 @@
+:root {
+    --primary-color: rgb(53, 53, 114);
+    --basic-border: 1px solid black;
+    --barely-border: 1px solid rgb(0 0 0 / .2);
+    --box-element-color: #eee;
+    --default-element-shadow: 0 0 10px gray;
+    --default-margin: 1rem;
+    --heading-font: Russo one, Russo one, sans-serif;
+    --body-font: Electrolize, Electrolize, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32px;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin: var(--default-margin);
+}
+
+h2 {
+    font-size: 24px;
+    font-family: var(--heading-font);
+}
+
+body {
+    font-size: 18px;
+    font-family: var(--body-font);
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: var(--barely-border);
+    border-radius: 0.5rem;
+    background-color: var(--box-element-color);
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    border: var(--barely-border);
+    padding: 1rem;
+}
+
+legend {
+    padding: .5rem;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: var(--body-font);
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: .5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: var(--box-element-color);
+    border: var(--barely-border);
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: rgb(80, 80, 171);
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: .5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: .5rem 0;
+}
+
+footer {
+    color: gray;
+    margin-top: 15px;
+    border-top: var(--basic-border);
+    text-align: center;
+    font-size: 12px;
+}
